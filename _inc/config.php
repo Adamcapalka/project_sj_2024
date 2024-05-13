@@ -15,5 +15,5 @@ require_once('classes/Menu.php');
 require_once('classes/Products.php');
 require_once('classes/Team.php');
 require_once('classes/Contact.php');
-require_once('functions.php');
+
 ?>
