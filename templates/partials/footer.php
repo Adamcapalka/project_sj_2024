@@ -25,7 +25,9 @@
             $pages = array('Home'=>'home.php',
             'About'=>'about.php',
             'Contact'=>'contact.php',
-            'Shop'=>'shop.php'  
+            'Shop'=>'shop.php' ,
+			'Login'=>'login.php' ,
+			'Register'=>'register.php'
             );
 
             foreach($pages as $page_name => $page_url){

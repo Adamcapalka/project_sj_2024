@@ -10,7 +10,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Fruitkha</title>
+	<title><?php echo 'Fruitkha | '. basename($_SERVER["SCRIPT_NAME"], '.php');?></title>
 	
 	<?php
      $page_name = basename($_SERVER["SCRIPT_NAME"], '.php');
@@ -35,13 +35,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 text-center">
 					<div class="main-menu-wrap">
-						<!-- logo -->
-						<div class="site-logo">
-							<a href="home.php">
-								<img src="../assets/img/logo.png" alt="">
-							</a>
-						</div>
-						<!-- logo -->
+						
 
 						<!-- menu start -->
 						<nav class="main-menu">
