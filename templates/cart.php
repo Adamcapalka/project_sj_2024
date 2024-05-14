@@ -63,12 +63,12 @@
 									<?php
 
 
-// Process the quantity update form submission
+
 if(isset($_POST['edituj'])) {
     $product_id = $_POST['product_id'];
     $quantity = $_POST['quantity'];
     $cart_object->updateQuantity($product_id, $quantity);
-    header('Location: cart.php'); // Redirect to prevent form resubmission
+    header('Location: cart.php'); 
     exit();
 
 }
@@ -108,33 +108,7 @@ echo$cart_object->generate_cart();
 	<!-- end cart -->
 	
 	
-	<!-- logo carousel -->
-	<div class="logo-carousel-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="logo-carousel-inner">
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/1.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/2.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/3.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/4.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/5.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end logo carousel -->
+	
 
 	<?php
 	include_once('partials/footer.php');

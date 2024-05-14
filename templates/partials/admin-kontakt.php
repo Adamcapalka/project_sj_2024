@@ -4,7 +4,7 @@
     $contacts = $contact_object->select();
     if(isset($_POST['delete_contact'])){
         $contact_id = $_POST['delete_contact'];
-        $contact_object->delete($contact_id);
+        $contact_object->delete();
         header('Location: admin.php');
         exit();
     }

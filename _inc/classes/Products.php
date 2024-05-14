@@ -1,23 +1,11 @@
 <?php
 
-    class Products extends Database{
-        private $db;
+    class Products{
+       
 
-        public function __construct(){
-            $this->db = $this->db_connection();        
-        }
+        
 
-        public function select(){
-            try{
-                $db_query = "SELECT * FROM cart";
-                $query =  $this->db->query($db_query);
-                $cart = $query->fetchAll();
-                return $cart;
-
-            }catch(PDOException $e){
-                echo($e->getMessage());
-            }   
-        }
+        
 
        
         

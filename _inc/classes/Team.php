@@ -10,7 +10,7 @@
     
             for($i = 0; $i<$n_rows;$i++){
                 echo('<div class="row">');
-                //sem pôjde cyklus po stĺpcoch
+                // cyklus po stĺpcoch
                 for($j = 0; $j<$n_cols;$j++){
                     echo('<div class="col-lg-4 col-md-6">');
                     echo('<div class="single-team-item">');
