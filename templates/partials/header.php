@@ -35,7 +35,13 @@
 			<div class="row">
 				<div class="col-lg-12 col-sm-12 text-center">
 					<div class="main-menu-wrap">
-						
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="home.php">
+								<img src="../assets/img/logo.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
 
 						<!-- menu start -->
 						<nav class="main-menu">

@@ -51,7 +51,7 @@ if(isset($_POST['pridaj'])) {
 	$price = $_POST['product_price'];
 	$image = $_POST['product_image'];
 	$cart_object->addToCart($name, $price, $image);
-	header('Location: shop.php'); // Redirect to prevent form resubmission
+	header('Location: shop.php'); 
 	exit();
 
 }

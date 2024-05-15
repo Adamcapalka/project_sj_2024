@@ -53,7 +53,7 @@
         public function delete(){
             try{
                 $data = array(
-                    'product_id' => $_POST['delete-product'] // Using $id directly instead of $_POST['delete-product']
+                    'product_id' => $_POST['delete-product'] 
                 );
                 $query = "DELETE FROM cart WHERE id = :product_id";
                 $query_run = $this->db->prepare($query);
@@ -71,7 +71,7 @@
                 $result .= '<form method="POST" action="cart.php">';
         $result .= '<tr class="table-body-row">';
         $result .= '<td class="delete-product"><button type="submit" name="delete-product" value="'.$cart[$i]->id.'"><i class="far fa-window-close"></i></button></td>';
-        $result .= '<input type="hidden" name="product_id" value="'.$cart[$i]->id.'">'; // Hidden input field for product ID
+        $result .= '<input type="hidden" name="product_id" value="'.$cart[$i]->id.'">'; 
         $result .= '<td class="product-image"><img src="'.$cart[$i]->image.'" alt=""></td>';
         $result .= '<td class="product-name">' . $cart[$i]->name . '</td>';
         $result .= '<td class="product-price">' . $cart[$i]->price . '</td>';

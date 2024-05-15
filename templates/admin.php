@@ -2,7 +2,7 @@
 include('partials/header.php');
 
 if(!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] != true){
-    header('Location: 404.php');
+    header('Location: home.php');
 }
 ?>
 <main><!-- search area -->

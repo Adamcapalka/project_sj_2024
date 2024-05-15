@@ -4,11 +4,6 @@
        
 
         
-
-        
-
-       
-        
        function generate_shop($n_rows, $n_cols){
         $n_fruit_img = 1;
         $n_fruit_name = 0;

@@ -48,7 +48,7 @@
 	<!-- end breadcrumb section -->
 	<?php
 
-// Include your Database class file here
+
 
 $contact = new Contact();
 if(isset($_POST['contact_submitted'])){
